@@ -21,6 +21,7 @@ class customInstallClass(install):
 
 setup(
 	name='BrainMachina',
+	version='1.0.0',
 	author='Aly Shmahell',
 	author_email='aly.shmahell@gmail.com',
 	license=license,

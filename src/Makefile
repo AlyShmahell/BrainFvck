@@ -1,24 +1,24 @@
-all: BrainMachina.l BrainMachina.y
+all: brainfvck.l brainfvck.y
 	# calling flex
-	flex BrainMachina.l
-	# copying lex.yy.c to BrainMachina.lexer.c
-	cp lex.yy.c BrainMachina.lexer.c
+	flex brainfvck.l
+	# copying lex.yy.c to brainfvck.lexer.c
+	cp lex.yy.c brainfvck.lexer.c
 	# removing lex.yy.c
 	rm lex.yy.c
 	# calling bison
-	bison -d BrainMachina.y
-	# copying BrainMachina.tab.h to BrainMachina.tokens.h
-	cp BrainMachina.tab.h BrainMachina.tokens.h
-	# removing BrainMachina.tab.h
-	rm BrainMachina.tab.h
-	# copying BrainMachina.tab.c to BrainMachina.c
-	cp BrainMachina.tab.c BrainMachina.c
-	# removing BrainMachina.tab.c
-	rm -rf BrainMachina.tab.c
+	bison -d brainfvck.y
+	# copying brainfvck.tab.h to brainfvck.tokens.h
+	cp brainfvck.tab.h brainfvck.tokens.h
+	# removing brainfvck.tab.h
+	rm brainfvck.tab.h
+	# copying brainfvck.tab.c to brainfvck.c
+	cp brainfvck.tab.c brainfvck.c
+	# removing brainfvck.tab.c
+	rm -rf brainfvck.tab.c
 	# making temp
 	mkdir temp -p
-	# compiling BrainMachina.tab.c
-	g++ BrainMachina.c -o temp/BrainMachina -std=c++11
-	# removing BrainMachina.c, BrainMachina.tokens.h and BrainMachina.lexer.c
-	rm -rf BrainMachina.c BrainMachina.tokens.h BrainMachina.lexer.c
+	# compiling brainfvck.tab.c
+	g++ brainfvck.c -o temp/brainfvck -std=c++11
+	# removing brainfvck.c, brainfvck.tokens.h and brainfvck.lexer.c
+	rm -rf brainfvck.c brainfvck.tokens.h brainfvck.lexer.c
 

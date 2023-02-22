@@ -1,6 +1,6 @@
 %{
 #include <stdio.h>
-#include "BrainMachina.tokens.h"
+#include "brainfvck.tokens.h"
 int line = 1;
 %}
 

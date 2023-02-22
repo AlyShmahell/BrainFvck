@@ -20,11 +20,11 @@ class customInstallClass(install):
 	
 
 setup(
-	name='BrainMachina',
+	name='brainfvck',
 	version='1.0.0',
 	author='Aly Shmahell',
 	author_email='aly.shmahell@gmail.com',
 	license=license,
-	url='https://github.com/AlyShmahell/BrainMachina',
+	url='https://github.com/AlyShmahell/brainfvck',
 	cmdclass={'install': customInstallClass}
 )

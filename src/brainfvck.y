@@ -7,7 +7,7 @@
 #include <vector>
 #include <iostream>
 #include <unordered_map>
-#include "BrainMachina.lexer.c"
+#include "brainfvck.lexer.c"
 /**
  * Brainf*ck Globals
  */
